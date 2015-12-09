@@ -8,7 +8,7 @@ RUN apt-get install -y libfontconfig1 libfontconfig1-dev
 
 ENV PHANTOM_JS="phantomjs-1.9.8-linux-x86_64"
 
-RUN wget https://bitbucket.org/ariya/phantomjs/downloads/$PHANTOM_JS.tar.bz2
+RUN wget --no-check-certificate https://bitbucket.org/ariya/phantomjs/downloads/$PHANTOM_JS.tar.bz2
 RUN tar xvjf $PHANTOM_JS.tar.bz2
 
 RUN mv $PHANTOM_JS /usr/local/share
