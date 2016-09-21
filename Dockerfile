@@ -9,6 +9,8 @@ RUN apt-get update && \
     tar xvjf $PHANTOM_JS.tar.bz2 && \
     mv $PHANTOM_JS /usr/local/share && \
     ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /usr/local/bin && \
+    mkdir -p /root/.phantomjs/2.1.1/x86_64-linux/bin && \
+    ln -sf /usr/local/share/$PHANTOM_JS/bin/phantomjs /root/.phantomjs/2.1.1/x86_64-linux/bin/phantomjs && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
