@@ -1,4 +1,4 @@
-FROM ruby:2.3.1
+FROM ruby:2.3.3
 
 ENV PHANTOM_JS="phantomjs-2.1.1-linux-x86_64"
 
